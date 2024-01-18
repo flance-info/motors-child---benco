@@ -10,6 +10,9 @@ function stm_enqueue_parent_styles() {
 	wp_deregister_script( 'stm-theme-scripts-ajax' );
 // 	wp_register_script( 'stm-theme-scripts-ajax-child', get_stylesheet_directory_uri() . '/assets/js/app-ajax.js', array( 'jquery' ), time(), true );
 // 	wp_enqueue_script( 'stm-theme-scripts-ajax-child' );
+
+	wp_enqueue_script( 'stm-theme-scripts-ajax-download-child', get_stylesheet_directory_uri() . '/assets/js/app-ajax-download.js', array( 'jquery' ), time(), true );
+
 	wp_deregister_script('stm-lazyload');
 	wp_enqueue_script( 'lazyload-child', get_stylesheet_directory_uri() . '/assets/js/lazyload.js', array( 'jquery' ), time(), true );
 

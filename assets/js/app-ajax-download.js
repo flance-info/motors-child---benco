@@ -1,15 +1,11 @@
 (function($) {
     "use strict";
 
-    var stm_single_filter_link = false;
-    var stmIsotope;
-    var $container = $('.stm-isotope-sorting');
-
     $(document).ready(function () {
-
+		 stm_ajax_add_download_child_pdf();
     });
 
-function stm_ajax_add_download_pdf() {
+function stm_ajax_add_download_child_pdf() {
         $('#downloadPDF form').on("submit", function(event){
             event.preventDefault();
             $.ajax({
