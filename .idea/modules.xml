@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../motors/.idea/motors.iml" filepath="$PROJECT_DIR$/../motors/.idea/motors.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/motors-child.iml" filepath="$PROJECT_DIR$/.idea/motors-child.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/stm-motors-extends/.idea/stm-motors-extends.iml" filepath="$PROJECT_DIR$/../../plugins/stm-motors-extends/.idea/stm-motors-extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/stm_vehicles_listing/.idea/stm_vehicles_listing.iml" filepath="$PROJECT_DIR$/../../plugins/stm_vehicles_listing/.idea/stm_vehicles_listing.iml" />
     </modules>
   </component>
 </project>

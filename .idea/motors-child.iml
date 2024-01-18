@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="motors" />
+    <orderEntry type="module" module-name="stm_vehicles_listing" />
+    <orderEntry type="module" module-name="stm-motors-extends" />
   </component>
 </module>
