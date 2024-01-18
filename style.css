@@ -1,0 +1,429 @@
+/*
+	Theme Name: Motors - Child Theme
+	Theme URI: http://motors.stylemixthemes.com/
+	Author: StylemixThemes
+	Author URI: http://stylemixthemes.com/
+	Description: Motors Child theme
+	Version: 2.5
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: blue, red, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, sticky-post, theme-options
+	Text Domain: motors-child
+    Template: motors
+
+    This theme, like WordPress, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Add your own styles here */
+li.menu-item-1418{width: 165px;}
+li.menu-item-1418 a:nth-child(1){text-align: right;}
+li.menu-item-1418 a:nth-child(1):before{display: block;position: absolute;content: "";background: url(https://www.benco.ca/wp-content/uploads/2019/09/Benco_PIECES-ET-SERVICES.png) no-repeat;background-size: 100%;background-position: center;width: 70px;height: 50px;    left: 0;}
+li.menu-item-1418 .sub-menu a{text-align: left;}
+li.menu-item-1418 .sub-menu a:before{content:none;}
+
+li.menu-item-5014{width: 275px;}
+li.menu-item-5014 a{text-align: right;}
+li.menu-item-5014 a:before{display: block;position: absolute;content: "";background: url(https://www.benco.ca/wp-content/uploads/2019/09/Benco_PIECES-ET-SERVICES.png) no-repeat;background-size: 100%;background-position: center;width: 70px;height: 50px;    left: 0;}
+
+li.menu-item-2858{width: 260px;}
+li.menu-item-2858 a{text-align: right;}
+li.menu-item-2858 a:before{display: block;position: absolute;content: "";background: url(https://www.benco.ca/wp-content/uploads/2019/09/LOGO-LOCATION.png) no-repeat;background-size: 100%;background-position: center;width: 70px;height: 50px;    left: 0;}
+.menu-item-6621 a{color: transparent !important;background: url(https://www.benco.ca/wp-content/uploads/2020/01/logo-1.png) no-repeat;background-size: 100%;width: 100px;background-position: center;}
+.main-menu .header-menu > li.menu-item-6621:hover > a,.menu-item-6621 a:hover{color: transparent !important}
+.main-menu .header-menu > li > a {padding: 0 15px !important;}
+.header-menu li a {font-size: 11px !important;}
+.header-menu li.menu-item-2858 {background:#fff;}
+.single-post .type-post strong{color:#fd0005 !important;font-size: 15px !important;}
+.header-nav .container{max-width: 1220px;}
+
+.ab-icon, .wp-menu-image.dashicons-before {
+	width: 20px !important;
+}
+
+body {
+	padding-bottom: 0 !important;
+}
+
+@media (max-width: 1024px){
+#st-2 {
+    bottom: 0;
+    display: flex;
+	flex-direction: column !important;
+
+    top: auto;
+    width: 50px !important;
+}
+
+	#st-2.st-hidden {
+		bottom: 0  !important;
+	}
+
+	#st-2 .st-toggle {
+		display: block !important;
+		left: 0 !important;
+	}
+	#st-2.st-hidden .st-toggle {
+		left: 48PX !important;
+	}
+	#st-2.st-hidden.st-left {
+		    left: -48px !IMPORTANT;
+	}
+
+}
+
+@media (max-width: 991px){
+#top-bar {
+   display: block !important;
+}
+	#top-bar .top-bar-wrapper {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width: 767px){
+	#top-bar .top-bar-info li:nth-child(1) {
+   		display: none;
+	}
+	.header-secondary-phone{
+		display: block !important;
+	}
+	.header-main {
+		position: relative;
+	}
+
+	.header-top-info {
+		position: absolute;
+		top: -50%;
+		left: 50%;
+		transform: translate( -50%, 20%);
+
+	}
+
+	.header-main .header-top-info .pull-right .header-secondary-phone {
+		padding-left: 41px;
+		position: relative;
+	}
+
+	.header-main .header-top-info .pull-right .header-secondary-phone:before {
+	content:"\e80b";
+	font-family: 'stm-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
+	position: absolute;
+    top: 0;
+    left: 0;
+    color: #f21000;
+    font-size: 33px;
+	}
+
+	.logo-main .bloglogo img {
+		width: 135px !important;
+	}
+	.header-top-info .clearfix  {
+	 display: flex;
+     flex-direction: column-reverse;
+	}
+
+	.mobile-menu-trigger {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    padding: 5px 3px;
+    transform: translate(-50%, -50%);
+	}
+	.header-main .header-top-info {
+		width: max-content;
+	}
+	#top-bar .top-bar-info .fancy-iframe {
+		display: block !important;
+	}
+}
+
+body {
+		padding-bottom: 0 !important;
+	}
+@media (max-width: 450px){
+	.header-main {
+		padding: 19px 0px 0px;
+	}
+.header-top-info {
+	margin-top: 0px !important;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(0%, -50%);
+}
+	.header-main-phone a, .header-secondary-phone a {
+    font-size: 13px;
+}
+	.header-main .header-secondary-phone .phone .phone-label, .header-main .header-main-phone .phone .phone-label {
+		font-size: 10px;
+	}
+	.header-main .header-top-info .pull-right .header-secondary-phone {
+		position:relative;
+	}
+	.header-main .header-top-info .pull-right .header-secondary-phone:before {
+	top: 50%;
+    left: 5%;
+    color: #f21000;
+    font-size: 20px;
+    transform: translate(-6%, -50%);
+	}
+	.header-main-phone .stm-icon-phone {
+	top: 50%  !important;
+    left: 5% !important;
+    color: #f21000;
+    font-size: 20px !important;
+    transform: translate(-6%, -50%);
+	}
+	.header-main .header-top-info .pull-right .header-main-phone {
+		margin-bottom: 8px;
+	}
+	.header-main .header-main-phone .phone .phone-number, .header-main .header-secondary-phone-single .phone .phone-number {
+		line-height: 10px;
+	}
+	.phone {
+		line-height: 10px !important;
+	}
+}
+
+
+@media (max-width: 450px) {
+
+	.header-main .header-top-info .pull-right .header-secondary-phone:before, .header-main-phone .stm-icon-phone {
+		left: 12% !important;
+	}
+
+	.footer_widgets_wrapper .widget-title h6 {
+		font-size: 12px;
+	}
+
+	.footer_widgets_wrapper .widgets  {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer_widgets_wrapper #nav_menu-3, #nav_menu-4 , .widget_text{
+		width: 100% !important;
+	}
+
+	.footer_widgets_wrapper .widget_text {
+		 width: 80% !important;
+    	 margin-left: 50px;
+	}
+	.copyright-text {
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 365px) {
+	#top-bar, #top-bar span {
+		font-size: 10px !important;
+	}
+}
+
+
+.main-menu .header-menu > li > a {
+    overflow: hidden;
+}
+
+
+
+
+body.stm-layout-header-car_dealer span.phone-label {
+	color: #fff !important;
+}
+body.stm-layout-header-car_dealer .header-main-phone a, .header-secondary-phone a {
+	color: #2a2a2a !important;
+	text-decoration: none !important;
+}
+body.stm-layout-header-car_dealer span.phone-label {
+	color: #2a2a2a !important;
+}
+body.stm-layout-header-car_dealer .header-main .header-address .address .heading-font {
+	color: #2a2a2a;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+body.stm-layout-header-car_dealer .header-menu li a {
+	font-family: Montserrat;
+	font-weight: 700;
+	font-style: normal;
+	color: #2a2a2a;
+	font-size: 13px;
+}
+body.stm-layout-header-car_dealer .header-nav.header-nav-transparent {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #fd0101;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+body.stm-layout-header-car_dealer .header-nav.header-nav-default {
+	background-color: #fd0101;
+	margin-bottom: 0;
+}
+
+.header-secondary-phone .phone {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-main .header-secondary-phone-single .phone .phone-number {
+	font-size: 18px !important;
+	line-height: 18px !important;
+}
+
+.car-listing-tabs-unit .car-listing-top-part .stm-listing-tabs ul {
+	flex-wrap: wrap;
+}
+
+#wrapper #header .main-menu .header-menu > li.menu-item-6621 a {
+	color: transparent !important;
+	height: 52px;
+}
+
+
+#wrapper #header .main-menu .header-menu > li > a:hover {
+	color: rgb(244, 7, 7) !important;
+}
+
+#wrapper #header .main-menu .header-menu > li.menu-item-6621 a:hover {
+	color: transparent !important;
+}
+
+
+#wrapper #header .main-menu .header-menu > li.menu-item-1418 a:nth-child(1) {
+	text-align: right;
+}
+#wrapper #header .main-menu .header-menu > li > a {
+	padding: 0 15px !important;
+	line-height: 52px;
+	text-align: right;
+}
+
+
+#wrapper #header .main-menu .header-menu > li > ul.sub-menu a{
+	text-align: left !important;
+}
+
+
+.stm-layout-header-car_dealer .header-main .header-top-info {
+	margin-top: 80px ;
+}
+
+#top-bar .pull-left{
+	float: right!important;
+	margin-left: 60px;
+}
+
+.stm-our-team .meta .name, .stm-our-team .meta .name.h5 {
+	font-weight: 700 !important;
+}
+
+a {
+	color: #ff1e1e;
+}
+
+#wrapper #header .main-menu .header-menu li.menu-item-has-children > a:after {
+	position: absolute;
+	content: '';
+	display: block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	top: 50%;
+	margin-top: -6px;
+	right: 7px;
+	font-size: 12px;
+	content: "\f107";
+}
+
+
+
+body .stm-border-top-unit .title {
+	color: #ff1e1e;
+}
+
+.fa-sun-o:before {
+	content: "\f185";
+}
+
+.fa-money:before {
+	content: "\f0d6";
+}
+
+.stm-layout-header-car_dealer .main-menu .header-menu > li.current-menu-item > a, .stm-layout-header-car_dealer .main-menu .header-menu > li.current_page_item > a {
+	color: #ff1e1e !important;
+}
+
+.h1, h1 {
+	font-size: 35px !important;
+}
+
+.stm-single-car-content h1 {
+	font-size: 14px !important;
+}
+
+
+@media (max-width: 500px) {
+	.car-listing-tabs-unit .car-listing-top-part .stm-listing-tabs ul li {
+		width: 96% !important;
+	}
+
+	.stm-layout-header-car_dealer .mobile-menu-trigger {
+		top: 50%;
+	}
+
+	.stm-layout-header-car_dealer .mobile-contacts-trigger .pull-right {
+		width: 100% !important;
+	}
+
+	.stm-layout-header-car_dealer .mobile-contacts-trigger .pull-right .header-main-phone{
+		margin-left: 0px;
+	}
+
+	.header-main-phone .stm-icon-phone {
+		left: 10px !important;
+	}
+
+	.stm-layout-header-car_dealer .mobile-contacts-trigger .pull-right:nth-child(1) {
+		margin-bottom: 5px !important;
+	}
+ }
+ 
+ 
+ .car-listing-top-part .found-cars-cloned {
+     top: 43px;
+ }
+ .single-listings .stm-border-top-unit .title {
+    font-size: 20px;
+    letter-spacing: -1px;
+ }
+ .single-car-data > table tr td.t-value {
+     font-weight: 400;
+ }
+ 
+ .stm-ajax-row.stm-loading:before {
+    opacity: 1;
+    visibility: hidden;
+    z-index: 50;
+} 
