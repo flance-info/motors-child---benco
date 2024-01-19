@@ -38,9 +38,9 @@ function stm_ajax_add_download_pdf() {
 
 	$recaptcha = true;
 
-	$recaptcha_enabled = get_theme_mod('enable_recaptcha',0);
-	$recaptcha_public_key = get_theme_mod('recaptcha_public_key');
-	$recaptcha_secret_key = get_theme_mod('recaptcha_secret_key');
+							$recaptcha_enabled    = apply_filters( 'stm_me_get_nuxy_mod', 0, 'enable_recaptcha' );
+							$recaptcha_public_key = apply_filters( 'stm_me_get_nuxy_mod', '', 'recaptcha_public_key' );
+							$recaptcha_secret_key = apply_filters( 'stm_me_get_nuxy_mod', '', 'recaptcha_secret_key' );
 	if(!empty($recaptcha_enabled) and $recaptcha_enabled and !empty($recaptcha_public_key) and !empty($recaptcha_secret_key)){
 		$recaptcha = false;
 		if(!empty($_POST['g-recaptcha-response'])) {

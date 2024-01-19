@@ -37,16 +37,17 @@
 					<div class="mg-bt-25px_"></div>
 					<div class="row">
 						<?php
-							$recaptcha_enabled = get_theme_mod('enable_recaptcha',0);
-							$recaptcha_public_key = get_theme_mod('recaptcha_public_key');
-							$recaptcha_secret_key = get_theme_mod('recaptcha_secret_key');
+							$recaptcha_enabled    = apply_filters( 'stm_me_get_nuxy_mod', 0, 'enable_recaptcha' );
+							$recaptcha_public_key = apply_filters( 'stm_me_get_nuxy_mod', '', 'recaptcha_public_key' );
+							$recaptcha_secret_key = apply_filters( 'stm_me_get_nuxy_mod', '', 'recaptcha_secret_key' );
+
 							if(!empty($recaptcha_enabled) and $recaptcha_enabled and !empty($recaptcha_public_key) and !empty($recaptcha_secret_key)):
 						?>
 							<div class="col-md-6 col-sm-6">
 								<div class="g-recaptcha" data-sitekey="<?php echo esc_attr($recaptcha_public_key); ?>" data-size="normal"></div>
 							</div>
 						<?php endif; ?>
-						<div class="col-md-6 col-sm-6">
+						<div class="col-md-6 col-sm-6 " style="float: right;">
 							<button type="submit" class="stm-request-test-drive"><?php esc_html_e("TÉLÉCHARGER ICI", 'motors'); ?></button>
 							<div class="stm-ajax-loader" style="margin-top:10px;">
 								<i class="stm-icon-load1"></i>
